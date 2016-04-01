@@ -43,15 +43,53 @@
         android:layout_below="@+id/showResult"
         />
 
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageGenerateButton"
+        android:id="@+id/sensorStartNotice"
+        />
 
     <Button
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:text="random from sensor"
-        android:id="@+id/sensorButton"
+        android:text="GENERATE SEED"
+        android:id="@+id/sensorGenerateButton"
+        android:layout_toRightOf="@+id/sensorStartNotice"
         android:layout_below="@+id/imageGenerateButton"
         />
 
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/sensorGetButton"
+        android:layout_below="@+id/imageGetButton"
+        android:text="GET SEED"
+        android:layout_toRightOf="@+id/sensorGenerateButton"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sensorGenerateButton"
+        android:id="@+id/touchStartNotice"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="GENERATE SEED"
+        android:id="@+id/touchGenerateButton"
+        android:layout_toRightOf="@+id/touchStartNotice"
+        android:layout_below="@+id/sensorGenerateButton"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/touchGetButton"
+        android:layout_below="@+id/sensorGenerateButton"
+        android:text="GET SEED"
+        android:layout_toRightOf="@+id/touchGenerateButton"/>
 
 
 </RelativeLayout>
